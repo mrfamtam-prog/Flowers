@@ -4,76 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Flower Garden &#127800;</title>
-
-    <!-- Connect CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ==========================================
-     WELCOME SCREEN
-========================================== -->
-<div id="welcome-screen">
-    <div class="welcome-content">
-        
-        <!-- Flower Emoji -->
-        <div class="welcome-flower">
-            &#127800;
+    <!-- WELCOME SCREEN -->
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-flower">&#127800;</div>
+            <h1>Welcome to My Garden</h1>
+            <p>A little garden full of beautiful flowers</p>
+            <button id="enter-button">Enter the Garden &#127799;</button>
+        </div>
+    </div>
+
+    <!-- MAIN GARDEN -->
+    <div class="garden">
+        <!-- Magical Effects -->
+        <div class="fireflies">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
         </div>
 
-        <h1>Welcome to My Garden</h1>
+        <div class="sparkles">
+            <span>&#10022;</span><span>&#10023;</span><span>&#10022;</span><span>&#10023;</span>
+        </div>
 
-        <p>A little garden full of beautiful flowers</p>
+        <!-- Flying Butterflies -->
+        <div class="butterfly butterfly-one">&#129419;</div>
+        <div class="butterfly butterfly-two">&#129419;</div>
 
-        <!-- Button with Tulip Emoji -->
-        <button id="enter-button">
-            Enter the Garden &#127799;
-        </button>
+        <!-- Title -->
+        <h1>&#127800; A Little Flower Garden &#127800;</h1>
+        <p class="instruction">Tap the flower and watch what happens &#10024;</p>
 
-    </div>
-</div>
+        <!-- Flower Container -->
+        <div id="flower-area">
+            <div id="flower-container"></div>
+        </div>
 
-<!-- ==========================================
-     GARDEN SCENE
-========================================== -->
-<div class="garden">
-
-    <!-- Magical Background Effects -->
-    <div class="fireflies">
-        <span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span>
-    </div>
-
-    <div class="sparkles">
-        <span></span><span></span><span></span><span></span><span></span>
+        <!-- Counter -->
+        <div class="counter">
+            Flower <span id="flower-number">1</span> of 5
+        </div>
     </div>
 
-    <!-- Butterflies -->
-    <div class="butterfly butterfly-one">&#129419;</div>
-    <div class="butterfly butterfly-two">&#129419;</div>
-
-    <!-- Main Title -->
-    <h1>&#127800; A Little Flower Garden &#127800;</h1>
-
-    <p class="instruction">
-        Tap the flower and watch what happens &#10024;
-    </p>
-
-    <!-- Flower Area -->
-    <div id="flower-area">
-        <div id="flower-container"></div>
-    </div>
-
-    <!-- Flower Counter -->
-    <div class="counter">
-        Flower <span id="flower-number">1</span> of 5
-    </div>
-
-</div>
-
-    <!-- Connect JavaScript -->
+    <!-- JavaScript Link -->
     <script src="script.js"></script>
-
 </body>
 </html>
